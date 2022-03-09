@@ -28,8 +28,19 @@ N is an integer within the range [0..20,000];
 each element of array A is an integer within the range [−100..100]. 
 
 */
+const { test, expect } = require('@jest/globals')
+const { sumAbs, calcMin, solution } = require('./minAbsSum')
 
+test('sumAbs', () => expect(() => sumAbs([10,9,8]))).toBe(27)
 
 
 
 test('first case', () => expect(solution([1,5,2,-2])).toBe(0))
+
+
+
+10,9,8,7   34 / 2 = 17
+1,1,1,1    4 / 2 = 2
+10, 10, 10, 10 40 / 2 = 20
+4,5,6,7 22 / 2 = 11
+10,5, 1, 20   36 / 18 
